@@ -1,0 +1,116 @@
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template: auto 145px 1fr / 329px 40% 1fr;
+  grid-template-areas:  "sidebar video video"
+                        "sidebar list list"
+                        "sidebar comments suggestions";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: #151C2E;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.sidebar h3 {
+  font-weight: 350;
+  margin-top: 43px;
+}
+
+.titlecolor {
+  background: -webkit-linear-gradient(left, #E41C27, #FF619F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+}
+
+.numbers span {
+  display: flex;
+}
+
+.numbers p {
+  margin-top:0;
+}
+
+.video {
+  grid-area: video;
+}
+
+.musicvideo {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.musicvideo img {
+  min-width: 100%;
+}
+
+.musicvideo i {
+  color: white;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  font-size: 32px;
+}
+
+.fa-play-circle {
+  position: absolute;
+  top: 50%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%;
+  font-size: 105px;
+}
+
+.list {
+  grid-area: list;
+  padding: 20px;
+}
+
+.list h3 {
+  margin: 0;
+  color: #3E474E;
+  font-weight: normal;
+  margin-bottom: 3px;
+}
+
+.list span {
+  color: #919191;
+}
+
+.buttons1 {
+  display: flex;
+  align-items: center;
+}
+
+.buttons1 button {
+  border-radius: 10px;
+  border-style: none;
+  padding: 10px;
+  background-image: linear-gradient(to right, #E41C27, #FF619F);
+  color: #FFDEE5;
+  font-size: 16px;
+}
+
+.comments {
+  grid-area: comments;
+}
+
+.suggestions {
+  grid-area: suggestions;
+}
